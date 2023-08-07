@@ -1,0 +1,39 @@
+{
+	"name": "20xx-client",
+	"version": "1.0.0",
+	"description": "A desktop client for 20xx",
+	"main": "main.js",
+	"scripts": {
+		"launch-normal": "electron-forge start",
+		"launch-mapeditor": "electron-forge start -- -- --mapeditor",
+		"launch-aquarium": "electron-forge start -- -- --aquarium",
+		"launch-conformance": "electron-forge start -- -- --conformance",
+		"launch-fluid": "electron-forge start -- -- --fluid",
+		"launch-feecof": "electron-forge start -- -- --feecof",
+		"package": "electron-forge package",
+		"make": "electron-forge make"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/The0Show/20xx-client.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/The0Show/20xx-client/issues"
+	},
+	"homepage": "https://github.com/The0Show/20xx-client#readme",
+	"devDependencies": {
+		"@electron-forge/cli": "^6.0.3",
+		"@electron-forge/maker-deb": "^6.0.3",
+		"@electron-forge/maker-rpm": "^6.0.3",
+		"@electron-forge/maker-squirrel": "^6.0.3",
+		"@electron-forge/maker-zip": "^6.0.3",
+		"electron": "^21.3.0"
+	},
+	"dependencies": {
+		"discord-rpc-electron": "^4.0.1",
+		"electron-squirrel-startup": "^1.0.0"
+	}
+}
